@@ -4,10 +4,42 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.Navbar{
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
     display: flex;
-    gap: 20px;
-}
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img{
+    margin-right: 50px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 60%;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .contact-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
 
 .header-part{
     display: flex;
@@ -60,7 +92,7 @@ h2 {
 p {
     max-width: 700px;
     margin-left: 100px;
-    color: #666;
+    color: #9d6868;
     font-size: 20px;
     line-height:1.2;
 }
@@ -94,7 +126,7 @@ align-items: center;
     text-align: center;
     width: 350px;
     margin: 0px 20px;
- 
+    background: linear-gradient(to right, #bebbba, #e0dbd7);
 }
 
 .card img {
@@ -159,3 +191,82 @@ align-items: center;
     font-size: 18px;
     margin-top: 40px 0px 40px 0px;
 }
+.circle-part:hover{
+    background-color: #333e46;
+    color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------footer part is here ---------------- */
+
+.footer{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    background-color: #8faec3;
+    padding: 40px;
+}
+.footer1, .footer2, .footer3{
+    width: 33%;
+    margin: 20px;
+    padding: 10px;
+}
+..footer1{
+    margin: 40px;
+}
+
+.footer1> img{
+    margin-left: 60px;
+    justify-content: center;
+}
+.footer3> a:hover{
+    background-color: #030c13;
+    color: wheat;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+text-align: center;
+  }
+
+ ul li {
+    margin: 20px;
+  
+  }
+
+ul li a {
+    text-decoration: none;
+
+  }
+
+  ul li:hover{
+    border: 2px solid ghostwhite;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: burlywood;
+    font-size: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+
+
+  @media screen and (max-width: 768px) { 
+    /* Styles for screens up to 768px wide (tablet and smaller) */
+    header {
+      flex-direction: column-reverse; /* Stack elements vertically */
+      text-align: center; /* Center content horizontally */
+    }
