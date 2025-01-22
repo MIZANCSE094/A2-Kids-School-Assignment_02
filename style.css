@@ -196,9 +196,19 @@ align-items: center;
     color: wheat;
 }
 
+/* ------------------------------------image part is here----------------------------------------- */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
-
+.images-part{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 
 
 
@@ -238,7 +248,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 100%;
 text-align: center;
   }
 
@@ -253,11 +263,11 @@ ul li a {
   }
 
   ul li:hover{
-    border: 2px solid ghostwhite;
+    border: 1px solid ghostwhite;
     padding: 10px;
     border-radius: 10px;
     background-color: burlywood;
-    font-size: bold;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -265,7 +275,7 @@ ul li a {
 
 
   @media screen and (max-width: 576px) { 
-    header, .vision-part,.footer {
+    header, .vision-part,.footer, .images-part {
       flex-direction: column;
       text-align: center; 
     }
@@ -273,5 +283,10 @@ ul li a {
     flex-direction: column-reverse;
     margin: 10px;
     }
-    
+    ul li:hover{
+        background-color: burlywood;
+      }
+      ul li {
+        /* margin: 10px; */
+        padding: 10px;
 }
