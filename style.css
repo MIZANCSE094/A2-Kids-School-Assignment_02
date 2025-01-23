@@ -9,12 +9,12 @@ header {
     color: #fff;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
-  header img{
-    margin-right: 50px;
-  }
+.image-prat{
+    margin-left: 100px;
+}
 
   nav ul {
     list-style: none;
@@ -58,7 +58,6 @@ header {
 .header-data h1{
     font-size: 40px;
     font-weight: bold;
-    margin: 30px ;
 }
 .header-data button{
 padding: 10px 20px;
@@ -201,6 +200,7 @@ align-items: center;
 main{
     max-width: 1200px;
     margin: 0 auto;
+    background: url(assets/bg.png);
 }
 
 
@@ -209,11 +209,21 @@ main{
     gap: 5px;
     align-items: center;
 }
+.teams{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+.pic{
+    border-radius: 20px;
+}
 
-
-
-
-
+.btn{
+    border: none;
+    border-radius: 30px;
+    background-color: #36a713;
+    height: 20px;
+}
 
 
 
@@ -231,7 +241,7 @@ main{
     margin: 20px;
     padding: 10px;
 }
-..footer1{
+.footer1{
     margin: 40px;
 }
 
@@ -248,7 +258,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: auto%;
 text-align: center;
   }
 
@@ -263,12 +273,9 @@ ul li a {
   }
 
   ul li:hover{
-    border: 1px solid ghostwhite;
-    padding: 10px;
-    border-radius: 10px;
     background-color: burlywood;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    padding: 5px;
   }
 
 
