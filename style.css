@@ -147,7 +147,7 @@ align-items: center;
     justify-content: center;
 }
 
-.card button, .btn {
+.card button, {
     background-color: #007bff;
     color: #e0c3c3;
     padding: 10px 15px;
@@ -214,7 +214,21 @@ main{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
 }
-
+.pic{
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    background-color: #007bff;
+    color: #e0c3c3;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+    cursor: pointer;
+    font-size: 10px;
+    justify-content: center;
+}
 
 
 
@@ -234,7 +248,7 @@ main{
     padding: 10px;
 }
 .footer1{
-    margin: 40px;
+ margin: 40px;
 }
 
 .footer1> img{
@@ -272,7 +286,6 @@ ul li a {
 
 
 
-
   @media screen and (max-width: 576px) { 
     header, .vision-part,.footer, .images-part {
       flex-direction: column;
@@ -293,5 +306,6 @@ ul li a {
     grid-template-columns: repeat(1,1fr);
     justify-content: center;
     text-align: center;
+    grid-gap: 10px;
 }
-  }
+}
