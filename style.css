@@ -147,7 +147,7 @@ align-items: center;
     justify-content: center;
 }
 
-.card button, {
+.card button{
     background-color: #007bff;
     color: #e0c3c3;
     padding: 10px 15px;
@@ -228,8 +228,12 @@ main{
     cursor: pointer;
     font-size: 10px;
     justify-content: center;
+    margin-bottom: 5px;
 }
-
+.btn:hover{
+    background-color: #9d6868;
+    color: #e0c3c3;
+}
 
 
 /* --------------footer part is here ---------------- */
