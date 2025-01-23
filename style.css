@@ -147,7 +147,7 @@ align-items: center;
     justify-content: center;
 }
 
-.card button {
+.card button, .btn {
     background-color: #007bff;
     color: #e0c3c3;
     padding: 10px 15px;
@@ -211,19 +211,10 @@ main{
 }
 .teams{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5px;
-}
-.pic{
-    border-radius: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
 }
 
-.btn{
-    border: none;
-    border-radius: 30px;
-    background-color: #36a713;
-    height: 20px;
-}
 
 
 
@@ -235,6 +226,7 @@ main{
     width: 100%;
     background-color: #8faec3;
     padding: 40px;
+    margin-top: 40px;
 }
 .footer1, .footer2, .footer3{
     width: 33%;
@@ -297,3 +289,9 @@ ul li a {
         /* margin: 10px; */
         padding: 10px;
 }
+.teams{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    text-align: center;
+}
+  }
